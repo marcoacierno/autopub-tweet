@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "autopub-tweet"
+version = "0.3.0"
+description = ""
+authors = ["Marco Acierno <marcoaciernoemail@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+autopub = { path = "/home/marco/projects/autopub", develop = true }
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."autopub"]
+autopub = "autopub_tweet.plugin"

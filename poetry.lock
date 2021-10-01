@@ -1,0 +1,57 @@
+[[package]]
+name = "autopub"
+version = "0.2.1"
+description = "Automatic package release upon pull request merge"
+category = "main"
+optional = false
+python-versions = "^3.6"
+develop = false
+
+[package.dependencies]
+pluggy = "^1.0.0"
+tomlkit = ">= 0.5, < 2.0"
+
+[package.extras]
+github = ["githubrelease (>=1.5.8,<2.0.0)", "httpx (==0.16.1)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/autopub/autopub.git"
+reference = "plugins-support"
+resolved_reference = "0820be0bd705af2968615548930f50792638c981"
+
+[[package]]
+name = "pluggy"
+version = "1.0.0"
+description = "plugin and hook calling mechanisms for python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "tomlkit"
+version = "0.7.2"
+description = "Style preserving TOML library"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "4c5f8a5f4c0d943eac8d7d8396a1f4d093501d5cfcb94bc957686d0ad1639dc4"
+
+[metadata.files]
+autopub = []
+pluggy = [
+    {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
+    {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
+]
+tomlkit = [
+    {file = "tomlkit-0.7.2-py2.py3-none-any.whl", hash = "sha256:173ad840fa5d2aac140528ca1933c29791b79a374a0861a80347f42ec9328117"},
+    {file = "tomlkit-0.7.2.tar.gz", hash = "sha256:d7a454f319a7e9bd2e249f239168729327e4dd2d27b17dc68be264ad1ce36754"},
+]
